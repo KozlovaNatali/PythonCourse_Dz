@@ -8,9 +8,13 @@
 # 4 4 -> 2 2 
 # 5 6 -> 2 3 
 
-s = int(input("Введите сумму чисел: "))
-p = int(input("Введите произведение чисел: "))
-for x in range(s):
-    for y in range(p):
-        if s == x + y and p == x * y:
-            print(x, y)
+# s = int(input("Введите сумму чисел: "))
+# p = int(input("Введите произведение чисел: "))
+# for x in range(s):
+#     for y in range(p):
+#         if s == x + y and p == x * y:
+#             print(x, y)
+
+list_2 = [5, 7]
+age = [{'Anna': 25, "Andrey": 33}, {"Ivan": 45, "Alexandr": 38}]
+print(age[1]['Ivan'])            
