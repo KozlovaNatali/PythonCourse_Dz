@@ -17,5 +17,17 @@ element = 0
 for i in range(len(a)):
     if x - a[i] < x - element and x - a[i] > 0:
         element = a[i]
-print(element)        
+print(element)    
+
+n = int(input("Введите кол-во элементов: "))
+array = [int(i) for i in input("Введите значения массива: ").split()] 
+x = int(input("Введите число, которое нужно подсчитать: "))
+count = abs(x - array[0])
+numbers = array[0]
+for el in range(1, n):
+    temp = abs(x - array[el])
+    if count > temp:
+        count = temp
+        numbers = array[el]
+print(numbers)
          

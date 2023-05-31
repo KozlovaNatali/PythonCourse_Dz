@@ -20,3 +20,12 @@ else:
         if a[i] == x:
             count += 1
     print(count)
+
+n = int(input("Введите кол-во элементов: "))
+array = [int(i) for i in input("Введите значения массива: ").split()] 
+x = int(input("Введите число, которое нужно подсчитать: "))
+count = 0
+for el in array:
+    if el == x:
+        count += 1
+print(count)
